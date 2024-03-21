@@ -10,7 +10,6 @@ module.exports = {
       fontFamily: {
         calistoga: ['Calistoga', 'sans-serif'],
       },
-
     },
   },
   plugins: [],

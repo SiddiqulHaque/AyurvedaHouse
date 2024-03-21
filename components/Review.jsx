@@ -74,7 +74,7 @@ const Review = () => {
                 <p className="text-sm font-sans  text-[#babdc0] ">Your opinion won't be posted publicly</p>
                 <div className="text-5xl flex h-[100px] gap-6 text-[#dddfe1]">
                     <div
-                        className={`flex  items-center ${isTDHovered ? 'hover:text-[#FF5733]' : ''} ${tDClicked ? 'text-[#FF5733]' : ''}`}
+                        className={`flex cursor-pointer  items-center ${isTDHovered ? 'hover:text-[#FF5733]' : ''} ${tDClicked ? 'text-[#FF5733]' : ''}`}
                         onMouseEnter={() => setTDHovered(true)}
                         onMouseLeave={() => setTDHovered(false)}
                     >
@@ -82,7 +82,7 @@ const Review = () => {
                         <p className="text-[24px] font-sans">No</p>
                     </div>
                     <div
-                        className={`flex items-center ${isTUHovered ? 'hover:text-[#90EE90]' : ''} ${tUClicked ? 'text-[#90EE90]' : ''}`}
+                        className={`flex cursor-pointer items-center ${isTUHovered ? 'hover:text-[#90EE90]' : ''} ${tUClicked ? 'text-[#90EE90]' : ''}`}
                         onMouseEnter={() => setTUHovered(true)}
                         onMouseLeave={() => setTUHovered(false)}
 
@@ -98,7 +98,7 @@ const Review = () => {
                 <div className="text-md  font-sans py-4 flex gap-2 ">
                     {
                         praise.map((p) => {
-                            return <span key={p.id} className={`px-3  rounded-xl flex  justify-center items-center transition ease-in-out delay-150  hover:bg-[#90EE90] duration-300 cursor-pointer ${Praises.includes(p.id) ? 'bg-[#90EE90]' : 'bg-[#dddfe1]'} `}
+                            return <span key={p.id} className={`px-3  rounded-xl flex  justify-center items-center transition ease-in-out delay-150   duration-300 cursor-pointer ${Praises.includes(p.id) ? 'bg-[#90EE90]' : 'bg-[#dddfe1]'} `}
                                 onClick={() => handlePraiseClick(p.id)}
                             >{p.praise}</span>
                         })
